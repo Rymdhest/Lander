@@ -35,7 +35,7 @@ internal class Program
 
         for (int i = 0; i <countries.Length; i++)
         {
-            if (countries[i].rule == "Republic") System.Console.WriteLine(countries[i].country) ;
+            if (countries[i].rule == "Republic") System.Console.WriteLine($"{i} {countries[i].country}") ;
         }
     }
 }
