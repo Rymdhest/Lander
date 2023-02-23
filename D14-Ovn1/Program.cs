@@ -33,9 +33,16 @@ internal class Program
         countries[5] = new Country() { country = "Czech", rule = "Republic", capital = "Prague", population = 10551219 };
         countries[6] = new Country() { country = "Romania", rule = "Republic", capital = "Bukarest", population = 19760314 };
 
+        Country highestPop = sweden;
+        Country lowestPop = sweden;
         for (int i = 0; i <countries.Length; i++)
         {
-            if (countries[i].rule == "Republic") System.Console.WriteLine($"{i} {countries[i].country}") ;
+            if (countries[i].population > highestPop.population) highestPop = countries[i];
+            if (countries[i].population < lowestPop.population) lowestPop = countries[i];
         }
+        Console.WriteLine("REPUBLIC WITH HIGHEST POPULATION");
+        highestPop.print();
+        Console.WriteLine("REPUBLIC WITH LOWEST POPULATION");
+        lowestPop.print();
     }
 }
