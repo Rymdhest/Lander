@@ -28,9 +28,14 @@ internal class Program
         countries[1] = germany;
         countries[2] = sanMarino;
 
-        countries[3] = new Country() { country = "Denmark", rule = "Monarch", capital = "Stockholm", population = 5928364 };
-        countries[3] = new Country() { country = "Italy", rule = "Republic", capital = "Rom", population = 58853482 };
-        countries[3] = new Country() { country = "Czech", rule = "Republic", capital = "Prague", population = 10551219 };
-        countries[3] = new Country() { country = "Romania", rule = "Republic", capital = "Bukarest", population = 19760314 };
+        countries[3] = new Country() { country = "Denmark", rule = "Monarch", capital = "Copenhagen", population = 5928364 };
+        countries[4] = new Country() { country = "Italy", rule = "Republic", capital = "Rom", population = 58853482 };
+        countries[5] = new Country() { country = "Czech", rule = "Republic", capital = "Prague", population = 10551219 };
+        countries[6] = new Country() { country = "Romania", rule = "Republic", capital = "Bukarest", population = 19760314 };
+
+        for (int i = 0; i <countries.Length; i++)
+        {
+            countries[i].print();
+        }
     }
 }
