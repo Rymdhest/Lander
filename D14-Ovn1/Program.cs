@@ -2,7 +2,7 @@
 
 internal class Program
 {
-    class Person
+    class Country
     {
         public string country;
         public string rule;
@@ -19,6 +19,8 @@ internal class Program
     }
     private static void Main(string[] args)
     {
-    
+        Country sweden = new Country() { country = "Sweden" , rule="Monarch", capital = "Stockholm", population= 10512820 };
+        Country germany = new Country() { country = "Germany", rule = "Republic", capital = "Berlin", population = 83783902 };
+        Country sanMarino = new Country() { country = "San Marino", rule = "Republic", capital = "San Marino", population = 33600 };
     }
 }
